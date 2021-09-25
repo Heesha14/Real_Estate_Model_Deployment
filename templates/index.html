@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Submit Page</title>
+  </head>
+  <body>
+    <h1>Real estate Prediction</h1>
+    <form action = "/" method = "POST">
+        <input type = "number" name = "X1_transaction_date" placeholder="X1_transaction_date" step="any" required>
+        <input type = "number" name = "X2_house_age" placeholder="X2_house_age" step="any" required>
+        <input type = "number" name = "X3_distance_to_nearest_MRT_station" placeholder="X3_distance_to_nearest_MRT_station" step="any"required>
+        <input type = "number" name = "X4_number_of_convenience_stores" placeholder="X4_number_of_convenience_stores" step="any"required>
+        <input type = "number" name = "X5_latitude" placeholder="X5_latitude" step="any"required>
+        <input type = "number" name = "X6_longitude" placeholder="X6_longitude" step="any" required>
+        <input type = "submit">
+    </form>
+
+    {%  if estate_pred %}
+          <p>Your predicted real estate amount : </p> {{estate_pred}}
+    {%endif%}
+
+  </body>
+</html>
