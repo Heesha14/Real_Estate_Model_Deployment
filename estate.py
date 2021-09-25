@@ -10,7 +10,7 @@ from sklearn.linear_model import LinearRegression
 
 def real_estate_prediction(X1_transaction_date, X2_house_age, X3_distance_to_station,
                            X4_convenience_stores, X5_latitude, X6_longitude):
-    df = pd.read_csv("D:\\SLIIT\\Y3.S2\\Fundamentals of Data Mining - IT3051\\Project\\Flask\\Trial\\real.csv")
+    df = pd.read_csv("real.csv")
 
     df.drop('No', axis=1, inplace=True)
 
